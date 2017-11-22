@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>sell</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <script>
+      (function (w, d) {
+        var docE = d.documentElement;
+        var resizeE = 'orientationchange' in w ? 'orientationchange' : 'resize';
+        var fn = function () {
+          var clientW = docE.clientWidth;
+          if(clientW){
+            docE.style.fontSize = 200 * (clientW / 750) + 'px';
+          }
+        };
+        if(d.addEventListener){
+          w.addEventListener(resizeE, fn, false);
+          d.addEventListener('DOMContentLoaded', fn, false);
+        }
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
